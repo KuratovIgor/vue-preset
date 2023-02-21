@@ -1,0 +1,46 @@
+@import 'resources';
+
+html, #app, body {
+  width: 100%;
+  height: 100%;
+}
+
+.h1, h1 {
+  @include text-h1;
+}
+
+.h2, h2 {
+  @include text-h2;
+}
+
+.h3, h3 {
+  @include text-h3;
+}
+
+.text {
+  &-lg {
+    @include text-lg;
+  }
+
+  &-md {
+    @include text-md;
+  }
+
+  &-sm {
+    @include text-sm;
+  }
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+.c-p {
+  cursor: pointer !important;
+}
+
+// Margins | Paddings
+@include sizes-classes;
+
+// Global classes
+@include project-classes;
